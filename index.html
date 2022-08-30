@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- displays site properly based on user's device -->
+
+    <!--
+    <link
+      href="./images/favicon-32x32.png"
+      rel="icon"
+      sizes="32x32"
+      type="image/png"
+    />
+-->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+
+  </head>
+
+  <body>
+
+    <div class="container-main">
+
+    <div class="container">
+
+    <div class="box-1">
+
+      <p id="box-1-titlu" style="color:hsl(179, 62%, 43%);"> Join our community </p>
+
+      <p id="box-1-subtitlu" style="color: hsl(71, 73%, 54%);"> 30-day, hassle-free money back guarantee</p>
+
+      <p id="box-1-content" style="color: hsl(218, 22%, 67%);">
+      Gain access to our full library of tutorials along with expert code reviews. Perfect for any developers who are serious about honing their skills.
+      </p>
+
+    </div>
+
+    <div class="box-2-container">
+
+    <div class="box-3">
+
+    <p id="box-3-titlu" style="color:hsl(204, 43%, 93%);">Monthly Subscription</p>
+
+    <p style="color:white;"> <span id="box-3-subtitlu"> &dollar; 29</span> <span id="durata">per month</span></p>
+
+    <p id="box-3-content" style="color:hsl(204, 43%, 93%);"> Full access for less than &dollar;1 a day</p>
+
+    <button class="open-button" onclick="openForm()" style="color:white;">Sign Up</button>
+
+    <div class="form-popup" id="myForm">
+      <form class="form-container" id="form-container-lmf">
+        <h2>Sign Up</h2>
+
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Name" name="name" id="name" required>
+
+        <label for="birtdate"><b>Birth date</b></label>
+        <input type="date" placeholder="Birth date" name="birtdate" id="birthdate" required>
+
+        <label for="bill"><b>Billing address</b></label>
+        <input type="text" placeholder="Billing adress" name="bill" id="bill" required>
+
+        <button type="submit" class="btn" id="btn-submit">Submit</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+
+      <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+
+
+
+        document.getElementById("form-container-lmf").addEventListener("submit", function (e) {
+           // afisare date in consola
+         var nameInput = document.getElementById("name").value;
+
+         var birthInput = document.getElementById("birthdate").value;
+
+         var billInput = document.getElementById("bill").value;
+        //prevent the normal submission of the form
+        e.preventDefault();
+
+        console.log(nameInput);
+        console.log(birthInput);
+        console.log(billInput);
+  });
+
+        </script>
+
+    </div>
+
+   </div>
+
+   <div class="box-4">
+    <p class="box-4-titlu" style="color:hsl(204, 43%, 93%);"> Why Us </p>
+
+    <p> <ul class="box-4-content" style="color:hsl(204, 43%, 93%);">
+
+      <li>Tutorials by industry experts</li>
+      <li>Peer & expert code review</li>
+      <li>Coding exercises</li>
+      <li>Access to our GitHub repos</li>
+      <li> Community forum</li>
+      <li>Flashcard decks</li>
+      <li>New videos every week</li>
+
+    </ul>
+
+    </p>
+
+  </div>
+
+  </div>
+
+  </div>
+
+  </div>
+
+  <!--
+  <footer>
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.</p>
+  </footer>
+-->
+  </body>
+</html>

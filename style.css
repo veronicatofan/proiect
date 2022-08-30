@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+
+/*  MOBILE DESIGN  */
+
+@media all and (max-width:700px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: hsl(204, 43%, 93%);
+        font-family: 'karla';
+
+    }
+
+    .container-main{
+        height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 85%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .box-1{
+        background-color: white;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 270px;
+    }
+
+    /* stilizare continut box 1 */
+
+    #box-1-titlu, #box-1-subtitlu, #box-1-content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #box-1-titlu{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    #box-1-subtitlu{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #box-1-content{
+        font-size: 16px;
+    }
+
+    .box-2-container{
+        background-color: white;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        height: 530px;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        background-color: hsl(204, 43%, 93%);
+    }
+
+    .box-3{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: hsl(179, 62%, 43%);
+    }
+
+    #box-3-titlu, #box-3-subtitlu, #box-3-content{
+        margin-left: 10%;
+    }
+
+    #box-3-titlu{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #box-3-subtitlu{
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    #durata{
+        opacity: 0.6;
+    }
+
+    .open-button{
+        background-color: hsl(71, 73%, 54%);
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 100%;
+        margin-top: 20px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* Style pentru formular */
+
+    .form-popup {
+        display: none;
+        position: absolute;
+        width: 85%;
+        background-color: hsl(71, 73%, 54%);
+        height: 265px;
+        z-index: 9;
+        top: 320px;
+      }
+
+    #box-3-content{
+        font-size: 16px;
+    }
+
+    .box-4{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: hsl(179, 60%, 50%);
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .box-4-titlu{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10%;
+    }
+
+    .box-4-content{
+        list-style-type: none;
+    }
+
+}
+
+
+/*  DESKTOP DESIGN  */
+
+@media all and (min-width:700px){
+
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: hsl(204, 43%, 93%);
+        font-family: 'karla';
+    }
+
+    .container-main{
+        height: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container{
+        width: 40%;
+        height: 600px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .box-1{
+        background-color: white;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        height: 250px;
+    }
+
+     /* stilizare continut box 1 */
+
+     #box-1-titlu, #box-1-subtitlu, #box-1-content{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #box-1-titlu{
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    #box-1-subtitlu{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #box-1-content{
+        font-size: 16px;
+    }
+
+    .box-2-container{
+        background-color: white;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        display: grid;
+        height: 350px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        background-color: hsl(204, 43%, 93%);
+    }
+
+    .box-3{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        background-color: hsl(179, 62%, 43%);
+        border-bottom-left-radius: 15px;
+    }
+
+    #box-3-titlu, #box-3-subtitlu, #box-3-content{
+        margin-left: 20%;
+    }
+
+    #box-3-titlu{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #box-3-subtitlu{
+        font-size: 34px;
+        font-weight: bold;
+    }
+
+    #durata{
+        opacity: 0.6;
+        margin-left: 0px;
+    }
+
+    .open-button{
+        background-color: hsl(71, 73%, 54%);
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        width: 65%;
+        margin-left: 20%;
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    /* Style pentru formular */
+
+    .form-popup {
+        display: none;
+        position: absolute;
+        width: 40%;
+        background-color: hsl(71, 73%, 54%);
+        height: 300px;
+        z-index: 9;
+        top: 320px;
+      }
+
+    #box-3-content{
+        font-size: 16px;
+    }
+
+    .box-4{
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        background-color: hsl(179, 60%, 50%);
+        border-bottom-right-radius: 15px;
+    }
+
+    .box-4-titlu{
+        font-size: 20px;
+        font-weight: bold;
+        margin-left: 10%;
+    }
+
+    .box-4-content{
+        list-style-type: none;
+    }
+
+}
+
+/* FOOTER */
+
+/*
+footer{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+    text-align: center;
+}
+*/
